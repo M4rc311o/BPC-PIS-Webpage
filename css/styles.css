@@ -1,0 +1,81 @@
+#logo {
+    /*filter: drop-shadow(0px 0px 20px rgba(255,0,0,1));*/
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse{
+    0% {
+        filter: drop-shadow(0px 0px 20px rgba(255,0,0,1));
+    }
+    50% {
+        filter: drop-shadow(0px 0px 20px rgba(255,0,0,0.2));
+    }
+    100% {
+        filter: drop-shadow(0px 0px 20px rgba(255,0,0,1));
+    }
+}
+
+.subject-column {
+    width: 30%;
+}
+
+.date-column {
+    width: 30%;
+}
+
+.credits-column {
+    width: 20%;
+}
+
+.grade-column {
+    width: 20%;
+}
+
+.bars {
+    height:28px;
+}
+
+.bars-animation {
+    animation: load 2s;
+    animation-fill-mode: forwards;
+}
+
+#programming-bar {
+    --end-width: 30%;
+}
+
+#web-design-bar {
+    --end-width: 5%;
+}
+
+#inquations-bar {
+    --end-width: 95%;
+}
+
+@keyframes load {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--end-width);
+    }
+}
+
+#ip-button {
+    margin-bottom: 10px;
+}
+
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
